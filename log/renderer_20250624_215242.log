@@ -1,0 +1,14 @@
+=== PBR Renderer Log File ===
+Created: 2025-06-24 21:52:42
+=============================
+
+[21:52:42] [INFO] Texture loaded: color
+[21:52:42] [INFO] Vulkan window created successfully
+[21:52:42] [INFO] Vulkan instance created successfully.
+[21:52:42] [INFO] Vulkan logical device created successfully.
+[21:52:42] [INFO] Swapchain created successfully
+[21:52:42] [INFO] Graphics command pool created successfully.
+[21:52:42] [INFO] Transfer command pool created successfully.
+[21:52:42] [INFO] Compute command pool created successfully.
+
+=== End of Log ===
