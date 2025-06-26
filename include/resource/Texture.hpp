@@ -49,17 +49,18 @@ struct Texture {
   TextureFilter filter = TextureFilter::None;
   ChannelType channelType = ChannelType::None;
 
-  std::shared_ptr<uint8_t[]> data;
+  std::shared_ptr<uint8_t[]> data = nullptr;
 
   Texture() = default;
-  Texture(const std::string& textureName, int w, int h, TextureType t,
-          TextureFilter f, ChannelType ct = ChannelType::None)
+  Texture(const std::string& textureName, int w, int h,
+          ChannelType ct = ChannelType::None, TextureType t = TextureType::None,
+          TextureFilter f = TextureFilter::None)
       : name(textureName),
         width(w),
         height(h),
+        channelType(ct),
         type(t),
-        filter(f),
-        channelType(ct) {}
+        filter(f) {}
 
   bool IsValid() const { return width > 0 && height > 0; }
 

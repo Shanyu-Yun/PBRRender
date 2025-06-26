@@ -38,7 +38,7 @@ add_definitions(-DUSE_VULKAN)
 add_executable(real_renderer ${SOURCES})
 
 # 链接 Vulkan 和 GLFW 库
-target_link_libraries(real_renderer Vulkan::Vulkan glfw glm::glm )
+target_link_libraries(real_renderer Vulkan::Vulkan glfw glm::glm)
 
 # 包含头文件目录
 target_include_directories(real_renderer PRIVATE include)

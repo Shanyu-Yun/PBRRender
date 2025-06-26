@@ -27,7 +27,7 @@ void AssetManager::loadTexture(std::string path, TextureType type,
   stbi_image_free(data);
 
   // 创建纹理对象，指定通道类型为RGBA
-  Texture texture(name, w, h, 4, type, filter, ChannelType::RGBA);
+  Texture texture(name, w, h, ChannelType::RGBA, type, filter);
   texture.data = buffer;
 
   //这里还需要一些逻辑检查是否有重名纹理
