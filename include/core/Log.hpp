@@ -38,6 +38,12 @@ class Log {
   // 获取缓冲区大小
   static size_t GetBufferSize() { return m_logBuffer.size(); }
 
+  //立即刷新缓冲保存log文件
+  static void FlushBuffer() {
+    LogToFile();
+    m_logBuffer.clear();
+  }
+
  private:
   static std::vector<std::string> m_logBuffer;
   static void LogToFile();

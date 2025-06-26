@@ -3,4 +3,15 @@
         "vector": "cpp",
         "xstring": "cpp"
     }
+    {
+        "cmake.configureEnvironment": {
+            "CHCP": "65001"
+        },
+        "cmake.buildEnvironment": {
+            "CHCP": "65001"
+        },
+        "terminal.integrated.env.windows": {
+            "CHCP": "65001"
+        }
+    }
 }
